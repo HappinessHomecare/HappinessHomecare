@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happiness Homecare</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="assets/HHCLogo[1958].png" alt="Happiness Homecare Logo" class="logo">
+    <h1>Happiness Homecare</h1>
+    <p>Supporting You Every Step of the Way</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Our Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to Happiness Homecare</h2>
+    <p>We are committed to providing compassionate and professional care tailored to your individual needs.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Happiness Homecare is a trusted NDIS-approved service provider offering a wide range of supports to help individuals live independently and joyfully. Our dedicated team is here to assist you in daily life and beyond.</p>
+    <img src="assets/ndis-logo.png" alt="NDIS Approved" class="ndis-logo">
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Daily Living Personal Support</li>
+      <li>Community Access and Participation</li>
+      <li>Life Stage Transition Support</li>
+      <li>Registered Nurse for Community Nursing Care</li>
+      <li>Behavior Support</li>
+      <li>Assistive Equipment for Recreation</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Booking</h2>
+    <form onsubmit="event.preventDefault(); alert('Booking submitted!');">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="service">Select a Service</label>
+      <select id="service" name="service" required>
+        <option value="daily-support">Daily Living Personal Support</option>
+        <option value="community">Community Access and Participation</option>
+        <option value="transition">Life Stage Transition Support</option>
+        <option value="nurse">Community Nursing Care</option>
+        <option value="behavior">Behavior Support</option>
+        <option value="equipment">Assistive Equipment</option>
+      </select>
+
+      <label for="details">Additional Details</label>
+      <textarea id="details" name="details"></textarea>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Happiness Homecare | Green & Yellow with Heart</p>
+  </footer>
+</body>
+</html>
